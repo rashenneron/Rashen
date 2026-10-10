@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="The personal website of Rashen Neron Dharmakan — aspiring AI programmer, creative technologist, and founder of Neron Labs.">
+  <title>Rashen Neron Dharmakan | Personal Website</title>
+  <style>
+    :root { --bg:#080a0e; --panel:#11151c; --text:#f5f7fa; --muted:#a8b0bd; --line:#252c37; --accent:#3b82f6; }
+    * { box-sizing:border-box; }
+    html { scroll-behavior:smooth; }
+    body { margin:0; background:var(--bg); color:var(--text); font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; line-height:1.65; }
+    a { color:inherit; text-decoration:none; }
+    .wrap { width:min(1080px, calc(100% - 40px)); margin:auto; }
+    header { position:sticky; top:0; z-index:5; background:rgba(8,10,14,.88); backdrop-filter:blur(14px); border-bottom:1px solid var(--line); }
+    nav { min-height:72px; display:flex; justify-content:space-between; align-items:center; gap:20px; }
+    .brand { font-weight:800; letter-spacing:.04em; }
+    .brand span { color:var(--accent); }
+    .navlinks { display:flex; gap:22px; color:var(--muted); font-size:.92rem; }
+    .navlinks a:hover, .email:hover { color:var(--accent); }
+    .hero { min-height:78vh; display:grid; align-items:center; padding:90px 0 75px; }
+    .eyebrow { color:var(--accent); text-transform:uppercase; letter-spacing:.18em; font-size:.78rem; font-weight:800; }
+    h1 { font-size:clamp(2.6rem, 7vw, 5.7rem); line-height:1.03; letter-spacing:-.055em; max-width:900px; margin:18px 0 24px; }
+    h1 span { color:var(--accent); }
+    .lead { max-width:700px; color:var(--muted); font-size:clamp(1.05rem,2vw,1.25rem); }
+    .actions { display:flex; flex-wrap:wrap; gap:12px; margin-top:32px; }
+    .btn { display:inline-block; padding:12px 18px; border-radius:8px; border:1px solid var(--line); font-weight:700; }
+    .btn.primary { background:var(--accent); border-color:var(--accent); color:white; }
+    .btn:hover { transform:translateY(-2px); }
+    section { padding:76px 0; border-top:1px solid var(--line); }
+    h2 { font-size:clamp(1.8rem,4vw,2.6rem); margin:0 0 18px; letter-spacing:-.035em; }
+    .section-intro { color:var(--muted); max-width:720px; margin:0 0 30px; }
+    .grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:16px; }
+    .card { padding:24px; border:1px solid var(--line); border-radius:14px; background:linear-gradient(145deg,#111b2b,#0c111a); }
+    .card .num { color:var(--accent); font-weight:800; font-size:.8rem; letter-spacing:.12em; }
+    .card h3 { margin:12px 0 8px; font-size:1.2rem; }
+    .card p { color:var(--muted); margin:0; }
+    .tags { display:flex; flex-wrap:wrap; gap:10px; margin-top:24px; }
+    .tag { border:1px solid var(--line); color:#d5dae2; border-radius:999px; padding:7px 12px; font-size:.9rem; }
+    .contact-panel { background:var(--panel); border:1px solid var(--line); border-radius:16px; padding:clamp(24px,5vw,44px); }
+    .email { color:var(--text); font-weight:700; overflow-wrap:anywhere; }
+    footer { padding:28px 0; color:var(--muted); font-size:.88rem; }
+    @media (max-width:720px) { .navlinks { gap:12px; font-size:.82rem; } .grid { grid-template-columns:1fr; } .hero { min-height:auto; padding:90px 0; } }
+    @media (max-width:430px) { .navlinks a:nth-child(2) { display:none; } .wrap { width:min(100% - 28px,1080px); } }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="wrap" aria-label="Main navigation">
+      <a class="brand" href="#home">RASHEN <span>NERON</span></a>
+      <div class="navlinks">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#interests">Interests</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero wrap" id="home" style="border-top:0">
+      <div>
+        <div class="eyebrow">Curiosity • Creativity • Technology</div>
+        <h1>Hi, I'm <span>Rashen Neron</span> Dharmakan.</h1>
+        <p class="lead">I'm an aspiring AI programmer and creative technology enthusiast who enjoys exploring artificial intelligence, animation, electronics, and building ideas into real projects.</p>
+        <div class="actions">
+          <a class="btn primary" href="#projects">Explore my interests</a>
+          <a class="btn" href="#contact">Get in touch</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="wrap">
+        <div class="eyebrow">A little about me</div>
+        <h2>Learning today. Building for tomorrow.</h2>
+        <p class="section-intro">I'm Rashen Neron Dharmakan. I like understanding how technology works and using creativity to imagine what could be possible. My goal is to keep learning, improve my programming skills, and one day contribute to meaningful AI projects.</p>
+        <p class="section-intro">I believe progress comes from curiosity, practice, and the courage to try new things. Whether I'm experimenting with code, planning an animation, or exploring electronics, I enjoy the process of turning an idea into something useful.</p>
+      </div>
+    </section>
+
+    <section id="projects">
+      <div class="wrap">
+        <div class="eyebrow">What I'm exploring</div>
+        <h2>Ideas I want to bring to life.</h2>
+        <p class="section-intro">These are areas I'm interested in developing through personal experiments and future projects.</p>
+        <div class="grid">
+          <article class="card">
+            <div class="num">01 / ART & STORY</div>
+            <h3>Neron Labs</h3>
+            <p>A creative brand concept focused on animation, visual storytelling, and making imaginative ideas feel cinematic.</p>
+          </article>
+          <article class="card">
+            <div class="num">02 / INTELLIGENCE</div>
+            <h3>Artificial Intelligence</h3>
+            <p>Learning about AI and programming, with a long-term ambition to build useful intelligent tools and applications.</p>
+          </article>
+          <article class="card">
+            <div class="num">03 / HARDWARE</div>
+            <h3>Electronics & Robotics</h3>
+            <p>Exploring microcontrollers such as ESP32, voice-command concepts, sensors, and ways software can interact with the physical world.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="interests">
+      <div class="wrap">
+        <div class="eyebrow">My interests</div>
+        <h2>A mix of technology and imagination.</h2>
+        <p class="section-intro">I'm especially interested in learning by making things, testing ideas, and improving step by step.</p>
+        <div class="tags">
+          <span class="tag">AI & Programming</span>
+          <span class="tag">3D Animation</span>
+          <span class="tag">Blender</span>
+          <span class="tag">ESP32 Projects</span>
+          <span class="tag">Electronics</span>
+          <span class="tag">Robotics</span>
+          <span class="tag">Creative Problem-Solving</span>
+          <span class="tag">Digital Design</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="wrap">
+        <div class="contact-panel">
+          <div class="eyebrow">Contact</div>
+          <h2>Let's connect.</h2>
+          <p class="section-intro">Have a question or want to talk about technology, animation, or a creative project? You can reach me by email.</p>
+          <a class="email" href="mailto:rashennerondharmakan@gmail.com">rashennerondharmakan@gmail.com</a>
+          <div class="actions">
+            <a class="btn primary" href="mailto:rashennerondharmakan@gmail.com?subject=Hello%20Rashen">Email me</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">© <span id="year">2026</span> Rashen Neron Dharmakan. Built around curiosity and creativity.</div>
+  </footer>
+</body>
+</html>
